@@ -57,7 +57,7 @@ class RectContainer extends StatelessWidget {
             children: [
               Text(
                 option,
-                style: const TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white, fontSize: 16),
               ),
 
             ],

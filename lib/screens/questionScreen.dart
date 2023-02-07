@@ -17,7 +17,7 @@ class QuestionScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 78,
+        toolbarHeight: 80,
         backgroundColor: Colors.black,
         title: const Text(
           'Quiz Application',
@@ -89,7 +89,7 @@ class QuestionScreen extends StatelessWidget {
                           element.key == quizController.pageCount.value)
                       .value,
                   style: const TextStyle(
-                    fontSize: 20,
+                    fontSize: 22,
                     fontWeight: FontWeight.w500,
                   ),
                 ),

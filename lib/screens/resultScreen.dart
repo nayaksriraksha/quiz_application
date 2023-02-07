@@ -70,7 +70,7 @@ class ResultScreen extends StatelessWidget {
   gradientappbarmobile(context) {
     return  AppBar(
       backgroundColor: Colors.black,
-      toolbarHeight: 60.0,
+      toolbarHeight: 80.0,
       automaticallyImplyLeading: false,
       leading: IconButton(icon: Icon(Icons.arrow_back,size: 20, color: Colors.white),onPressed: () {
         backPress(context);
