@@ -15,9 +15,6 @@ class QuestionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    var cusH = SizedBox(
-      height: MediaQuery.of(context).size.width * 0.08,
-    );
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 78,
@@ -83,8 +80,9 @@ class QuestionScreen extends StatelessWidget {
       )
 
               ),
-              cusH,
-              Obx(
+    SizedBox(
+    height: MediaQuery.of(context).size.width * 0.08,
+    ),              Obx(
                 () => Text(
                   Questions.entries
                       .firstWhere((element) =>
@@ -96,7 +94,9 @@ class QuestionScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              cusH,
+              SizedBox(
+                height: MediaQuery.of(context).size.width * 0.08,
+              ),
               ListView.builder(
                 shrinkWrap: true,
                 itemCount: 4,
@@ -111,6 +111,7 @@ class QuestionScreen extends StatelessWidget {
                           quizController.pageCount.value, index),
                       indexVal: index,
                       onTap: () {
+                        debugPrint("nbvbn...");
                         quizController.correctAns.add(getOptionsAnswerData(
                             quizController.pageCount.value, index));
 
@@ -123,8 +124,9 @@ class QuestionScreen extends StatelessWidget {
                   );
                 },
               ),
-              cusH,
-
+              SizedBox(
+                height: MediaQuery.of(context).size.width * 0.08,
+              ),
               Center(
                 child: Obx(
                   () => Row(

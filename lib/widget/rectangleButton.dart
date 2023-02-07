@@ -49,8 +49,8 @@ class RectContainer extends StatelessWidget {
                 element.key == quizController.pageCount.value)
                     .value ==
                     indexVal)
-                ? const Color.fromARGB(255, 122, 122, 122)
-                : const Color(0xff28282B),
+                ? Colors.black26
+                : Colors.black,
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
